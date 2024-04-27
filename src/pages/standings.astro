@@ -1,0 +1,132 @@
+
+---
+import Contactform from "@components/contactform.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon";
+---
+
+<Layout title="Contact">
+    <Container>
+        <Sectionhead>
+            <Fragment slot="title">UPL Standings</Fragment>
+        </Sectionhead>
+
+        <div class="h-full relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full my-8 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <caption class="p-5 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-white dark:text-white dark:bg-gray-800">
+                    Points Table
+                </caption>
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Pos
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Team
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Pl
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            W
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            L
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Points
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            1
+                        </th>
+                        <td class="px-6 py-4">
+                            Team Liquid
+                        </td>
+                        <td class="px-6 py-4">
+                            7
+                        </td>
+                        <td class="px-6 py-4">
+                            6
+                        </td>
+                        <td class="px-6 py-4">
+                            1
+                        </td>
+                        <td class="px-6 py-4">
+                            14
+                        </td>
+
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            2
+                        </th>
+                        <td class="px-6 py-4">
+                            Team Secret
+                        </td>
+                        <td class="px-6 py-4">
+                            7
+                        </td>
+                        <td class="px-6 py-4">
+                            4
+                        </td>
+                        <td class="px-6 py-4">
+                            8
+                        </td>
+                        <td class="px-6 py-4">
+                            8
+                        </td>
+
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            3
+                        </th>
+                        <td class="px-6 py-4">
+                            Team Spirit
+                        </td>
+                        <td class="px-6 py-4">
+                            7
+                        </td>
+                        <td class="px-6 py-4">
+                            3
+                        </td>
+                        <td class="px-6 py-4">
+                            4
+                        </td>
+                        <td class="px-6 py-4">
+                            6
+                        </td>                    
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            4
+                        </th>
+                        <td class="px-6 py-4">
+                            Team Aster
+                        </td>
+                        <td class="px-6 py-4">
+                            7
+                        </td>
+                        <td class="px-6 py-4">
+                            2
+                        </td>
+                        <td class="px-6 py-4">
+                            5
+                        </td>
+                        <td class="px-6 py-4">
+                            4
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </Container>
+</Layout>
