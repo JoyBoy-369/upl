@@ -160,7 +160,7 @@ const etag = (payload, weak = false) => {
   return prefix + fnv1a52(payload).toString(36) + payload.length.toString(36) + '"';
 };
 
-const $$Astro$1 = createAstro("https://astroship.web3templates.com");
+const $$Astro$1 = createAstro("https://upl-xi.vercel.app");
 const $$Image = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Image;
@@ -182,7 +182,7 @@ const $$Image = createComponent(async ($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<img${addAttribute(image.src, "src")}${spreadAttributes(additionalAttributes)}${spreadAttributes(image.attributes)}>`;
 }, "/Users/kevin/Desktop/workspace/projects/websites/upl/node_modules/.pnpm/astro@3.5.5/node_modules/astro/components/Image.astro", void 0);
 
-const $$Astro = createAstro("https://astroship.web3templates.com");
+const $$Astro = createAstro("https://upl-xi.vercel.app");
 const $$Picture = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Picture;
