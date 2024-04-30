@@ -1,20 +1,22 @@
 ---
 export const prerender = true;
 import Container from "@components/container.astro";
+import About from "@components/about.astro";
+import Venue from 'components/venue.astro'
 import Cta from "@components/cta.astro";
-import Features from "@components/features.astro";
-import News from "@components/news.astro"
+import Format from "@components/format.astro"
 import Hero from "@components/hero.astro";
-import Logos from "@components/logos.astro";
+import IconPlayers from "@components/icon-players.astro";
 import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout title="UPL">
     <Container>
         <Hero />
-        <Features />
-        <News/>
+        <About/>
+        <Venue/>
+        <IconPlayers/>
+        <Format/>
         <Cta />
-        <Logos />
     </Container>
 </Layout>

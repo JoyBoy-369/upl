@@ -1,0 +1,81 @@
+
+---
+import {Image} from "astro:assets"
+import patternImg from '@assets/grunge.png'
+---
+
+
+
+<div class='relative m-auto auto-cols-min grid w-full max-w-6xl gap-2 overflow-hidden p-2 sm:gap-2 sm:p-4
+    md:grid-cols-2 md:gap-3 md:p-6 lg:grid-cols-6 lg:gap-8'>
+
+    <div class="relative col-span-2 flex flex-col justify-center items-center   md:flex-col md:max-w-xl">
+
+    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Tournament Format</h2>
+    </div>
+
+    <div class="relative col-span-2 flex flex-col p-10 bg-white border border-gray-200 
+        rounded-xl shadow md:flex-col md:max-w-xl
+        hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+
+        <div class="flex flex-col p-4 justify-between leading-normal">
+            <Image src={patternImg} alt='pattern' class='z-10 object-cover h-full absolute inset-0 rounded-xl' />
+            <div class='z-10 text-hint-of-red-50 p-4 text-balance'>
+                <h5 class="mb-4 text-2xl font-bold tracking-tight uppercase ">Teams</h5>
+                <p class=" font-body font-normal">6 Male & 3 Female Teams named after districts of Uttarakhand</p>
+            </div>
+        </div>
+    </div>
+    <div  class="relative col-span-2  flex flex-col items-center p-10 bg-white border border-gray-200 
+        rounded-xl shadow md:flex-col md:max-w-xl
+        hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <div class="flex flex-col p-4 justify-between leading-normal">
+            <Image src={patternImg} alt='pattern' class='z-10 object-cover h-full absolute inset-0 rounded-xl' />
+
+            <div class='z-10 text-hint-of-red-50 p-4 text-balance'>
+                <h5 class="mb-4 text-2xl font-bold tracking-tight uppercase">Days</h5>
+                <p class="font-body font-normal ">12 Days of High Octane Cricket</p>
+            </div>
+        </div>
+    </div>
+    <div  class="relative col-span-2  flex flex-col items-center p-10 bg-white border border-gray-200 
+        rounded-xl shadow md:flex-col md:max-w-xl
+        hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+
+            <Image src={patternImg} alt='pattern' class='z-10 object-cover h-full absolute inset-0 rounded-xl' />
+
+            <div class='z-10 text-hint-of-red-50 p-4 text-balance'>
+                <h5 class="mb-4 text-2xl font-bold tracking-tight uppercase">Player Draft</h5>
+                <p class=" font-body font-normal ">To ensure competitivenes</p>
+            </div>
+        </div>
+    </div>
+
+    <div  class="relative col-span-2 flex flex-col items-center p-10 bg-white border border-gray-200 
+        rounded-xl shadow md:flex-col md:max-w-xl
+        hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+
+            <Image src={patternImg} alt='pattern' class='z-10 object-cover h-full absolute inset-0 rounded-xl' />
+
+            <div class='z-10 text-hint-of-red-50 p-4 text-balance'>
+                <h5 class="mb-4 text-2xl font-bold tracking-tight uppercase">Round Robin</h5>
+                <p class=" font-body font-normal ">Matches played in the day & the night</p>
+            </div>
+        </div>
+    </div>
+    <div  class="relative col-span-2 flex flex-col items-center p-10 bg-white border border-gray-200 
+        rounded-xl shadow md:flex-col md:max-w-xl
+        hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <div class="flex flex-col justify-between p-4 leading-normal">
+            <Image src={patternImg} alt='pattern' class='z-10 object-cover h-full absolute inset-0 rounded-xl' />
+
+            <div class='z-10 text-hint-of-red-50 p-4 tex-balance'>
+
+                <h5 class="mb-4 text-2xl font-bold tracking-tight uppercase">T20 MATCHES</h5>
+                <p class="font-body font-normal ">IPL Guidelines and Regulations</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+---
+import {Image} from 'astro:assets'
+import imageOne from '@assets/aboutOne.jpeg'
+import imageTwo from '@assets/aboutTwo.jpg'
+
+---
+
+<section class="lg:px-14">
+    <div class="gap-16 items-center py-8 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:mb-16">
+        <div class="font-light text-rangoon-green-950 sm:text-lg dark:text-gray-400">
+                <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">About UPL</h2>
+            <p class="font-body mb-4">The Uttarakhand Premier League is the state’s premier T20 tournament conducted by the Cricket Association of Uttarakhand. With the inaugural season slated to be held in June 2024, involving 6 men’s and 3 women’s’ teams, expect plenty of fast-paced T20 action. To be played at the Rajiv Gandhi International Cricket Stadium, Dehradun, the league aims to provide a platform for budding cricketers from the state as they rub shoulders with players who have represented Team India and various IPL franchises.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <div class="lg:h-96">
+                <Image src={imageOne} alt="about image One"
+
+                    widths={[560, imageOne.width]}
+                    sizes={`(max-width: 1368px) 560px, ${imageOne.width}px`}
+
+                    class="object-cover w-full h-full rounded-lg" />
+            </div>
+
+            <div class="lg:h-96">
+                <Image src={imageTwo} alt="about image Two"
+                    widths={[560, imageTwo.width]}
+                    sizes={`(max-width: 1368px) 560px, ${imageTwo.width}px`}
+
+                    class=" object-cover w-full h-full lg:mt-10 rounded-lg" />
+            </div>
+        </div>
+
+    </div>
+
+</section>
+

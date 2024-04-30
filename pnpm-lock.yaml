@@ -23,6 +23,12 @@ dependencies:
   '@fontsource-variable/inter':
     specifier: ^5.0.15
     version: 5.0.15
+  '@fontsource-variable/raleway':
+    specifier: ^5.0.19
+    version: 5.0.19
+  '@fontsource/k2d':
+    specifier: ^5.0.20
+    version: 5.0.20
   '@tailwindcss/typography':
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.3.5)
@@ -1288,6 +1294,14 @@ packages:
 
   /@fontsource-variable/inter@5.0.15:
     resolution: {integrity: sha512-CdQPQQgOVxg6ifmbrqYZeUqtQf7p2wPn6EvJ4M+vdNnsmYZgYwPPPQDNlIOU7LCUlSGaN26v6H0uA030WKn61g==}
+    dev: false
+
+  /@fontsource-variable/raleway@5.0.19:
+    resolution: {integrity: sha512-HR6JDmRqrjjkZnk0HhVR0vHCkDUuQdEwTaRz1nToWvej0gpC0riEdi7zmaQjaH12O7PBsO+bewqQFSUrA7tDhA==}
+    dev: false
+
+  /@fontsource/k2d@5.0.20:
+    resolution: {integrity: sha512-G3HLWY0NUuSt0IWz6pNkTqpxp5YocuoBouoKl4eAvYX6yFdl8nj7x0OkDu2xNN2up1lWQAixA1rkCDm5WxLaRA==}
     dev: false
 
   /@img/sharp-darwin-arm64@0.33.0:

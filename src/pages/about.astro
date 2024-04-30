@@ -1,7 +1,6 @@
 ---
 export const prerender = true;
 import { getCollection } from "astro:content";
-import { Picture } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
@@ -44,7 +43,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 
             </div>
 
-            =           <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+                  <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
 
                 <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We didn't reinvent the wheel</h2>

@@ -10,6 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: "#1D1E18",
         cobalt: {
           50: "#f0f6fe",
           100: "#deebfb",
@@ -64,7 +65,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Inter Variable", "Inter", ...defaultTheme.fontFamily.sans],
+        sans: ["K2D", "Raleway Variable", ...defaultTheme.fontFamily.sans],
+        body: ["Raleway Variable", ...defaultTheme.fontFamily.sans],
       },
     },
   },

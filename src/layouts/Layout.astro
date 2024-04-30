@@ -2,8 +2,11 @@
 import { SEO } from "astro-seo";
 import { ViewTransitions } from "astro:transitions";
 import Footer from "@components/footer.astro";
-import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource-variable/inter/index.css";
+
+import '@fontsource/k2d/400.css';
+import '@fontsource/k2d/600.css';
+import "@fontsource-variable/raleway"
+import '@styles/global.css'
 
 export interface Props {
     title: string;
@@ -55,8 +58,15 @@ const makeTitle = title
         />
         <ViewTransitions />
     </head>
-    <body>
-        <Navbar />
+    <body class='bg-hint-of-red-50'> 
+        <div class='px-10 pt-10'>
+            <h1 class="text-7xl text-center mb-4 font-extrabold text-cobalt-800 leading-none md:text-5xl lg:text-7xl">UTTARAKHAND PREMIER LEAGUE</h1>
+            <div class="flex hidden ">
+                <p class="font-normal font-extrabold lg:text-xl sm:px-16 lg:px-48">INAUGRAL SEASON</p> 
+                <p class="font-body font-normal lg:text-xl sm:px-16 lg:px-48">June 5th 2024</p>  
+            </div>
+        </div>
+        <!-- <Navbar /> -->
         <slot />
         <Footer />
         <style is:global>
@@ -66,6 +76,6 @@ const makeTitle = title
             content-visibility: auto;
         }
         </style>
-<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+        <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     </body>
 </html>

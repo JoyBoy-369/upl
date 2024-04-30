@@ -1,0 +1,79 @@
+---
+// @ts-ignore
+import {Image} from "astro:assets"
+import akashImg from '@assets/akash.png'
+import deepakImg from '@assets/deepak.png'
+import adityaImg from '@assets/aditya.png'
+import kunalImg from '@assets/kunal.png'
+import ranjanImg from '@assets/ranjan.png'
+import swapnilImg from '@assets/swapnil.png'
+import ektaImg from '@assets/ekta.png'
+import poonamImg from '@assets/poonam.png'
+import mansiImg from '@assets/mansi.png'
+import patternImg from '@assets/grunge.png'
+
+const features = [
+    {
+        title: "Akash Madhwal",
+        subtitle:"IPL - MI",
+        img:akashImg
+    },
+    {
+        title: "Swapnil Singh",
+        subtitle:"IPL - MI",
+        img:swapnilImg
+    },{
+        title: "Ranjan Kumar",
+        subtitle:"IPL - RCB",
+        img:ranjanImg
+    },{
+        title: "Aditya Tare",
+        subtitle:"IPL - MI",
+        img:adityaImg
+    },{
+        title: "Kunal Chandela",
+        subtitle:"Duleep Trophy",
+        img:kunalImg
+    },{
+        title: "Deepak Dhapola",
+        subtitle:"Duleep Trophy",
+        img:deepakImg
+    },{
+        title: "Ekta Bisht",
+        subtitle:" ",
+        img:ektaImg
+    },{
+        title: "Poonam Raut",
+        subtitle:" ",
+        img:poonamImg
+    },{
+        title: "Mansi Joshi",
+        subtitle:" ",
+        img:mansiImg
+    },
+];
+---
+
+<div
+    class=" p-8 lg:p-16 md:px-20 md:py-10 mt-10 mx-auto max-w-6xl rounded-lg">
+    <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Icon Players</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-16 items-stretch">
+        {
+        features.map((item) => (
+    <div  class:list={["relative flex flex-col text-hint-of-red-50 items-center  border border-gray-200 rounded-lg shadow md:max-w-xl"]}>
+
+            <Image src={patternImg} alt='pattern' class='-z-10 object-cover h-full absolute inset-0' />
+            <div class='h-48 pt-4 overflow-clip'>
+                <Image class=" object-cover scale-125 rounded-t-lg h-auto w-full md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+                    src={item.img} alt={item.title}/>
+            </div>
+            <div class='bg-cobalt-800 w-full text-center' style='min-height:3rem'>           
+            <p class='font-semibold font-body text-[#FF715B]'>{item.title}</p>
+                <p class='font-body'>{item.subtitle}</p>
+            </div>
+
+        </div>
+        ))
+        }
+    </div>
+</div>

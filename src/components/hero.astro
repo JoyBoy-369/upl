@@ -1,31 +1,30 @@
 ---
-import { Picture } from "astro:assets";
-import heroImage from "assets/hero.png";
-import heroImage2 from "assets/hero-alt.png"
-import heroImage3 from "assets/project.png"
-import Carousel from "@components/ui/Carousel";
-import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon";
+import { Image} from "astro:assets";
+import heroImage from "assets/banner.jpeg";
 ---
 
 <main
-    class="flex pt-16 pb-8 md:pt-12 md:pb-24">
-    <div class="py-6 w-full hidden md:block">
-
-        <Carousel
-            client:load
-            transition:persist
-            id='banner-carousel'
-            images={[heroImage, heroImage2, heroImage3]}
-        />
-        <!-- <Picture -->
-        <!--     src={heroImage} -->
-        <!--     alt="UPL in the air" -->
-        <!--     widths={[200, 400, 600]} -->
-        <!--     sizes="(max-width: 800px) 100vw, 620px" -->
-        <!--     loading="eager" -->
-        <!--     format="avif" -->
-        <!-- /> -->
-    </div>
+    class="flex">
+    <section class='relative'>
+        <Image src={heroImage} alt="hero Image" class='object-cover rounded-xl'/> 
+        <div class="flex flex-col absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-[35%] text-center text-hint-of-red-50">
+            <p class=" font-extrabold lg:text-xl sm:px-16 lg:px-48">INAUGRAL SEASON</p> 
+            <p class="font-body font-normal lg:text-xl sm:px-16 lg:px-48">June 5th 2024</p>  
+        </div>
+    </section>
+    <!-- <Carousel -->
+    <!--     client:load -->
+    <!--     transition:persist -->
+    <!--     id='banner-carousel' -->
+    <!--     images={[heroImage, heroImage2, heroImage3]} -->
+    <!-- /> -->
+    <!-- <Picture -->
+    <!--     src={heroImage} -->
+    <!--     alt="UPL in the air" -->
+    <!--     widths={[200, 400, 600]} -->
+    <!--     sizes="(max-width: 800px) 100vw, 620px" -->
+    <!--     loading="eager" -->
+    <!--     format="avif" -->
+    <!-- /> -->
 
 </main>

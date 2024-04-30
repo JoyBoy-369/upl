@@ -3,30 +3,18 @@
   "compilerOptions": {
     "baseUrl": "/Users/kevin/Desktop/workspace/projects/websites/upl/src",
     "strictNullChecks": true,
-    "types": [
-      "astro/client"
-    ],
+    "types": ["astro/client"],
     "paths": {
-      "@lib/*": [
-        "lib/*"
-      ],
-      "@utils/*": [
-        "utils/*"
-      ],
-      "@components/*": [
-        "components/*"
-      ],
-      "@layouts/*": [
-        "layouts/*"
-      ],
-      "@assets/*": [
-        "assets/*"
-      ],
-      "@pages/*": [
-        "pages/*"
-      ]
+      "@lib/*": ["lib/*"],
+      "@utils/*": ["utils/*"],
+      "@components/*": ["components/*"],
+      "@layouts/*": ["layouts/*"],
+      "@assets/*": ["assets/*"],
+      "@pages/*": ["pages/*"],
+      "@styles/*": ["styles/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"
   }
 }
+
