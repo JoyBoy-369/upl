@@ -2,6 +2,7 @@
 import { SEO } from "astro-seo";
 import { ViewTransitions } from "astro:transitions";
 import Footer from "@components/footer.astro";
+import  SpeedInsights  from "@vercel/speed-insights/astro"
 
 import '@fontsource/k2d/400.css';
 import '@fontsource/k2d/600.css';
@@ -35,6 +36,7 @@ const makeTitle = title
         <meta name="generator" content={Astro.generator} />
 
         <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
+        <SpeedInsights/>
         <SEO
             title={makeTitle}
             description="UPL"
